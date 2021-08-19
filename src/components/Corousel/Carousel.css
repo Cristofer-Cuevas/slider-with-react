@@ -1,0 +1,82 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imagesContainer {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  transition: left 0.5s;
+  left: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 3rem;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 3rem auto;
+}
+
+.countryBtn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.countryBtn:hover {
+  transition: background-color 0.5s;
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.arrows-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 45%;
+}
+
+.before-arrow,
+.next-arrow {
+  cursor: pointer;
+  width: 4%;
+}
+
+.images {
+  height: 100vh;
+}
+
+.imagesSubContainer {
+  height: 100vh;
+  position: relative;
+}
+
+.infoContainer {
+  width: 100%;
+  position: absolute;
+  bottom: -10%;
+  color: white;
+}
+
+.infoContainerTransition {
+  transition: bottom 1.5s;
+  bottom: 10%;
+}
+
+.location {
+  font-size: 2rem;
+  text-align: center;
+}
