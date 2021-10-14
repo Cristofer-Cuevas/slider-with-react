@@ -51,12 +51,19 @@
 
 .before-arrow,
 .next-arrow {
+  transition: width 0.5s;
   cursor: pointer;
   width: 4%;
 }
 
+.before-arrow:hover,
+.next-arrow:hover {
+  width: 4.5%;
+}
+
 .images {
   height: 100vh;
+  width: 100%;
 }
 
 .imagesSubContainer {
